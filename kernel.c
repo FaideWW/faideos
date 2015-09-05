@@ -135,7 +135,9 @@ void terminal_writestring(const char *data) {
 void terminal_writerainbow(const char *data) {
     size_t datalen = strlen(data);
     for (size_t i = 0; i < datalen; i++) {
-        terminal_setcolor(++terminal_color % NUMCOLORS);
+        uint8_t fg = terminal_color;
+        uint8_t bg = terminal_color >> 4;
+        terminal_setcolor(make_color(++fg % NUMCOLORS, ++bg % NUMCOLORS));
         terminal_putchar(data[i]);
     }
 }
