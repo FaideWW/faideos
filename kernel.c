@@ -118,5 +118,5 @@ void kernel_main() {
     /*
     No support for newlines yet
     */
-    terminal_writestring("Hello, kernel World!\n");
+    terminal_writestring("Hello, kernel World!\nThis is a second line!");
 }

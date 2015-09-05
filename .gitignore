@@ -34,4 +34,4 @@
 
 # iso builds
 *.iso
-isodir/
+isobuild/

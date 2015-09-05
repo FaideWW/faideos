@@ -17,7 +17,7 @@
     # setup the iso structure
     > mkdir -p isodir
     > mkdir -p isodir/boot
-    > mkdir -p isodir/grub
+    > mkdir -p isodir/boot/grub
     > cp faideos.bin isodir/boot/faideos.bin
     > cp grub.cfg isodir/boot/grub/grub.cfg
      
